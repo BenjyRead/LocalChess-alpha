@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/appicon2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mobdevportfolio">
+        <activity
+            android:name=".JoinBluetoothGame"
+            android:exported="false"
+            android:label="@string/title_activity_join_bluetooth_game"
+            android:theme="@style/Theme.Mobdevportfolio" />
+        <activity
+            android:name=".JoinOrHost"
+            android:exported="false"
+            android:label="@string/title_activity_join_or_host"
+            android:theme="@style/Theme.Mobdevportfolio" />
+        <activity
+            android:name=".HostBluetoothGame"
+            android:exported="false"
+            android:label="@string/title_activity_host_bluetooth_game"
+            android:theme="@style/Theme.Mobdevportfolio" />
+        <activity
+            android:name=".LoadGame"
+            android:exported="false"
+            android:label="@string/title_activity_load_game"
+            android:theme="@style/Theme.Mobdevportfolio" />
+        <activity
+            android:name=".PlayLocallyInitialChoices"
+            android:exported="false"
+            android:label="@string/title_activity_play_locally_initial_choices"
+            android:theme="@style/Theme.Mobdevportfolio" />
+        <activity
+            android:name=".PlayLocally"
+            android:exported="false"
+            android:label="@string/title_activity_play_locally"
+            android:theme="@style/Theme.Mobdevportfolio" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.Mobdevportfolio">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
